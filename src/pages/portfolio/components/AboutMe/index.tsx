@@ -53,7 +53,7 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
         </Animate>
         <p className={styles.intro}>
           {[
-            `안녕하세요, 데이터 사이언티스트를 꿈꾸는 `,
+            `안녕하세요, 데이터 엔지니어를 꿈꾸는 `,
             <span className={styles.withColor}>이유송</span>,
             `입니다. `,
             <br/>,
