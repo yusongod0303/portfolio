@@ -4,7 +4,7 @@ import { SkillItem, SkillSet, SkillProficiency } from './model';
 import styles from './style.module.less';
 import { Scala, Typescript, Javascript, Kotlin, Python, Bash } from './components/Language';
 import { Akka, ReactJS, NodeJS, Spring, VueJS } from './components/Framework';
-import { Oracle, Mysql } from './components/Database';
+import { Oracle, Mysql, Mongo } from './components/Database';
 import { Git, Docker, Kubernetes, Jenkins } from './components/OtherSkill';
 
 const skillSets: SkillSet[] = [
@@ -69,6 +69,10 @@ const skillSets: SkillSet[] = [
   {
     title: 'Database',
     items: [
+      {
+        title: 'Mongo',
+        imageNode: <Mongo id="mongo" />,
+      },
       {
         title: 'Oracle',
         imageNode: <Oracle id="oracle" />,

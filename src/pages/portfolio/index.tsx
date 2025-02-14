@@ -113,6 +113,7 @@ const PortfolioPage: React.FC = () => {
             toggled={toggle.get(NavEnum.About)}
             width={refMap[NavEnum.About]?.current?.clientWidth}
           />
+          <Skills ref={refMap[NavEnum.Skills]} />
           <Experience
             ref={refMap[NavEnum.Experience]}
             toggled={toggle.get(NavEnum.Experience)}
@@ -122,7 +123,6 @@ const PortfolioPage: React.FC = () => {
           {/* 향후 사이드 프로젝트 추가
            *  <Projects ref={refMap[NavEnum.Projects]} />
            */}
-          <Skills ref={refMap[NavEnum.Skills]} />
           <Activities ref={refMap[NavEnum.Activities]} />
           <Contact ref={refMap[NavEnum.Contact]} />
           <Footer onLeadDown={handleLeadDown} />

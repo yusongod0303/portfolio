@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "webpack serve --progress --mode development",
     "dev": "webpack serve --progress --mode development",
     "build": "webpack --progress --mode production",
     "predeploy": "npm run build",
