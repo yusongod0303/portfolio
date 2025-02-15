@@ -2,67 +2,55 @@ import React from 'react';
 import { NavEnum } from '../../data';
 import { SkillItem, SkillSet, SkillProficiency } from './model';
 import styles from './style.module.less';
-import { Scala, Typescript, Javascript, Kotlin, Python, Bash } from './components/Language';
-import { Akka, ReactJS, NodeJS, Spring, VueJS } from './components/Framework';
+import { Python, Bash, SQL, Java } from './components/Language';
+import { ReactJS, Airflow, Fastapi, Flask } from './components/Framework';
 import { Oracle, Mysql, Mongo } from './components/Database';
-import { Git, Docker, Kubernetes, Jenkins } from './components/OtherSkill';
+import { Git, Docker, Kubernetes, AWS, Tableau, Openai, Selenium } from './components/OtherSkill';
 
 const skillSets: SkillSet[] = [
   {
     title: 'Language',
     items: [
       {
-        title: 'Scala',
-        imageNode: <Scala id="scala" />,
+        title: 'Python',
+        imageNode: <Python id="python" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#만_4년을_함께'],
+        tags: ['#주 언어, 데이터 분석 및 모델링'],
       },
       {
-        title: 'Typescript',
-        imageNode: <Typescript id="typescript" />,
+        title: 'SQL',
+        imageNode: <SQL id="SQL" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#JS보다_TS_선호'],
-      },
-      {
-        title: 'Javascript',
-        imageNode: <Javascript id="javascript" />,
-        proficiency: SkillProficiency.Familiar,
-        tags: ['#현재_주_언어'],
+        tags: ['#query 문으로 원하는 데이터 추출'],
       },
       {
         title: 'Bash',
         imageNode: <Bash id="bash" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#쉘스크립트_작성_가능'],
+        tags: ['#컨테이너 및 파이프라인 관리'],
       },
     ],
   },
   {
-    title: 'Platform / Framework',
+    title: 'Framework',
     items: [
       {
-        title: 'Akka',
-        imageNode: <Akka id="akka" />,
+        title: 'Apache Airflow',
+        imageNode: <Airflow id="airflow" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#Scala_Akka_조합'],
+        tags: ['#데이터 파이프라인 구축 및 관리'],
       },
       {
-        title: 'React',
-        imageNode: <ReactJS id="reactjs" />,
+        title: 'Fastapi',
+        imageNode: <Fastapi id="fastapi" />,
         proficiency: SkillProficiency.Familiar,
-        tags: [],
+        tags: ['#로그 데이터 DB구축, 웹 애플리케이션 및 추천 시스템 구축'],
       },
       {
-        title: 'Node.js',
-        imageNode: <NodeJS id="nodejs" />,
+        title: 'Flask',
+        imageNode: <Flask id="flask" />,
         proficiency: SkillProficiency.Familiar,
-        tags: [],
-      },
-      {
-        title: 'Vue',
-        imageNode: <VueJS id="spring" />,
-        proficiency: SkillProficiency.Familiar,
-        tags: [],
+        tags: ['#데이터 시각화 대시보드 생성'],
       },
     ],
   },
@@ -84,7 +72,7 @@ const skillSets: SkillSet[] = [
     ],
   },
   {
-    title: 'etc',
+    title: 'Tools',
     items: [
       {
         title: 'Git',
@@ -99,16 +87,22 @@ const skillSets: SkillSet[] = [
         tags: [],
       },
       {
-        title: 'Kubernetes',
-        imageNode: <Kubernetes id="kubernetes" />,
+        title: 'AWS',
+        imageNode: <AWS id="aws" />,
         proficiency: SkillProficiency.Familiar,
         tags: [],
       },
       {
-        title: 'Jenkins',
-        imageNode: <Jenkins id="jenkins" />,
+        title: 'Openai api',
+        imageNode: <Openai id="openai" />,
         proficiency: SkillProficiency.Familiar,
-        tags: [],
+        tags: ['#RAG 생성 및 Feature Engineering에 활용'],
+      },
+      {
+        title: 'Selenium',
+        imageNode: <Selenium id="selenium" />,
+        proficiency: SkillProficiency.Familiar,
+        tags: ['데이터 수집 - 크롤링'],
       },
     ],
   },

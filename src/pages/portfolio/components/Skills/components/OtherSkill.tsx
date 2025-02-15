@@ -14,6 +14,18 @@ export const Kubernetes: React.FC<SkillIconProps> = (props) => {
   return <SkillIcon imageClassName={styles.kubernetes} {...props} />;
 };
 
-export const Jenkins: React.FC<SkillIconProps> = (props) => {
-  return <SkillIcon imageClassName={styles.jenkins} {...props} />;
+export const AWS: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.aws} {...props} />;
+};
+
+export const Tableau: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.tableau} {...props} />;
+};
+
+export const Openai: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.openai} {...props} />;
+};
+
+export const Selenium: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.selenium} {...props} />;
 };
