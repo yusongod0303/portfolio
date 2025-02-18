@@ -2,5 +2,142 @@
 
 .wrapper {
   .wrapper;
-  background-color: @wrapper-darker-color;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.headerWrapper{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 위아래 구분선 추가 */
+.sectionDivider {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 40px 0;
+}
+
+.header {
+  font-size: 28px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.addButton {
+  background-color: #40a9ff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #0077cc;
+  }
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 기본 3 x 2 형식 */
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1100px; /* ✅ 최대 너비 제한 (가운데 정렬) */
+  margin: 0 auto;
+}
+
+/* 🔹 반응형: 화면이 작으면 2 x 3 형식으로 변경 */
+@media (max-width: 1024px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 작은 화면에서는 2개씩 정렬 */
+  }
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: repeat(1, 1fr); /* ✅ 모바일에서는 1열 정렬 */
+  }
+}
+
+
+/* 🔹 프로젝트 카드 */
+.projectCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* 🔹 프로젝트 이미지 */
+.projectImage {
+  width: 100%;
+  height: 180px; /* ✅ 모든 이미지 동일한 크기로 유지 */
+  object-fit: cover; /* ✅ 비율 유지하며 넘치는 부분 크롭 */
+  border-radius: 10px;
+}
+
+/* 🔹 프로젝트 내용 */
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* 🔹 태그 스타일 */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* 🔹 GitHub 링크 스타일 */
+.githubLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.githubLink:hover {
+  text-decoration: underline;
 }

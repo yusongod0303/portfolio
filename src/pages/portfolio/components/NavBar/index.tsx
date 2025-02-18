@@ -37,7 +37,6 @@ const NavBar: React.FC<NavBarProps> = (props) => {
     >
       <ul>
         {Object.values(NavEnum)
-          .filter((e) => e !== NavEnum.Projects)
           .map((e) => renderChildById(e))}
         <li key="blog" className={styles.current}>
           <a href="https://velog.io/@yusongod0303" target="_blank">

@@ -93,7 +93,7 @@ const skillSets: SkillSet[] = [
         tags: [],
       },
       {
-        title: 'Openai api',
+        title: 'Openai API',
         imageNode: <Openai id="openai" />,
         proficiency: SkillProficiency.Familiar,
         tags: ['#RAG 생성 및 Feature Engineering에 활용'],
@@ -102,7 +102,7 @@ const skillSets: SkillSet[] = [
         title: 'Selenium',
         imageNode: <Selenium id="selenium" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['데이터 수집 - 크롤링'],
+        tags: ['#데이터 수집 - 크롤링'],
       },
     ],
   },

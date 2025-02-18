@@ -21,7 +21,7 @@ const SkillIcon: React.FC<SkillIconProps> = (props) => {
         {proficiency && <div className={styles.proficiency}>{proficiency}</div>}
       </div>
       {(tags || []).length > 0 && (
-        <ReactTooltip id={id} place="bottom" type="dark" effect="solid">
+        <ReactTooltip id={id} place="bottom" type="dark" effect="solid" padding="0.5px 16px" >
           <p className={styles.tooltip}>{tags!.join('\n')}</p>
         </ReactTooltip>
       )}
