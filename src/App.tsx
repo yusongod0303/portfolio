@@ -1,12 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Portfolio } from './pages';
+import React from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { Portfolio } from "./pages";
 
 const App: React.FC = () => {
   return (
     <div>
       <Router>
-        <Route exact path="/" component={Portfolio} />
+        <Switch>
+          <Route exact path="/" component={Portfolio} />
+        </Switch>
       </Router>
     </div>
   );
