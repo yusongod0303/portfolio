@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Portfolio } from './pages';
-import '@/global.less';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Portfolio } from "./pages"; // 중괄호 {} 필요
+import "@/global.less"; // 글로벌 스타일 적용
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Router>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Switch>
         <Route exact path="/" component={Portfolio} />
-      </Router>
-    </div>
+      </Switch>
+    </Router>
   );
 };
 
