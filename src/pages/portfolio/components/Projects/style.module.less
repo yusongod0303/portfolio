@@ -13,21 +13,21 @@
 }
 
 /* 위아래 구분선 추가 */
-.sectionDivider {
+.projectContent sectionDivider {
   width: 100%;
   border: none;
   border-top: 2px solid #ddd;
   margin: 40px 0;
 }
 
-.header {
+.projectContent header {
   font-size: 28px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.addButton {
+.projectContent addButton {
   background-color: #40a9ff;
   color: white;
   padding: 10px 14px;
@@ -65,8 +65,6 @@
   }
 }
 
-
-/* 🔹 프로젝트 카드 */
 .projectCard {
   background: white;
   border-radius: 12px;
@@ -78,6 +76,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 400px;
 
   &:hover {
     transform: translateY(-8px);
@@ -85,7 +84,6 @@
   }
 }
 
-/* 🔹 프로젝트 이미지 */
 .projectImage {
   width: 100%;
   height: 180px; /* ✅ 모든 이미지 동일한 크기로 유지 */
@@ -93,35 +91,34 @@
   border-radius: 10px;
 }
 
-/* 🔹 프로젝트 내용 */
 .projectContent {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  flex-grow: 1;
 }
 
-h3 {
+.projectContent h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #333;
 }
 
-p {
+.projectContent p {
   font-size: 14px;
   color: #555;
   margin-bottom: 8px;
 }
 
-/* 🔹 태그 스타일 */
-.tags {
+.projectTags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 12px;
 }
 
-.tag {
+.projectTag {
   background: #f0f0f0;
   padding: 6px 12px;
   border-radius: 20px;
@@ -130,14 +127,22 @@ p {
   color: #666;
 }
 
-/* 🔹 GitHub 링크 스타일 */
-.githubLink {
+.projectFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.projectGithubLink {
   display: inline-block;
   margin-top: 10px;
   color: #007bff;
   font-weight: bold;
   text-decoration: none;
-}
+  text-align: center;
+
 .githubLink:hover {
   text-decoration: underline;
+}
 }

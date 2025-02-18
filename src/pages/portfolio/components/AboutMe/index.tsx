@@ -44,7 +44,6 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           <p className={styles.mainPoint}>
             다양한 프로젝트 경험으로 <span>데이터를 탐구하며</span>, <span>효율적인 솔루션</span>을 고민하는 과정에서 <span>흥미</span>를 느끼고, 
             지속적으로 <span>성장</span>하는 <span>데이터 분석가 & 엔지니어</span> 입니다.
-  
           </p>
         </Animate>
         <p className={styles.intro}>
