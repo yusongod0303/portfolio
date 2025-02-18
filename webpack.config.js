@@ -74,6 +74,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
+    publicPath: '/portfolio/',
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
