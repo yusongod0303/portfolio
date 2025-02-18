@@ -42,30 +42,35 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className={styles.introWrapper}>
         <Animate translateX={toggled ? 0 : -width} friction={80} tension={500}>
           <p className={styles.mainPoint}>
-            다양한 프로젝트 경험으로 <span>데이터를 탐구하며</span>, <span>효율적인 솔루션</span>을 고민하는 과정에서 <span>흥미</span>를 느끼고, 
-            지속적으로 <span>성장</span>하는 <span>데이터 분석가 & 엔지니어</span> 입니다.
+            데이터를 통한 <span>인사이트 도출</span>과 <span>모델 개발</span>에 열정을 가진 신입 <span>데이터 사이언티스트</span>입니다.<br />
+            신재생 에너지 건전성 평가부터 추천 시스템 개발까지, <span>다양한 도메인</span>에서의 <span>문제 해결 경험</span>을 쌓아왔습니다.
           </p>
+
         </Animate>
         <p className={styles.intro}>
           {[
-            `안녕하세요, 데이터 분석가 및 엔지니어를 꿈꾸는 `,
+            `안녕하세요, 데이터 수집부터 분석, 인사이트 도출 및 모델 개발까지 전체 프로세스를 경험한 `,
             <span className={styles.withColor}>이유송</span>,
             `입니다. `,
             <br/>,
-            `다양한 `,
-            <span className={styles.codeBlock}>빅데이터 분석</span>,
-            ' 및 ',
-            <span className={styles.codeBlock}>데이터 엔지니어링</span>,
-            '프로젝트를 수행하며, 데이터의 흐름을 이해하고 최적화하는 과정에서 흥미를 느껴왔습니다. ',
-            '새로운 기술을 학습하고, 팀원들과 협력하여 ',
-            <span className={styles.codeBlock}>실제 문제를 해결하는 경험</span>,
-            '을 통해 성장하고 있으며, 빠르게 변화하는 업계에서 지속적으로 도전하며 역량을 키워나가고 있습니다. ',
-            '또한, 팀 프로젝트에서 팀장을 맡아 기획부터 개발, 배포까지 전 과정에서 주도적으로 참여하며 ',
+            `신재생 에너지 최적화부터 추천 시스템 개발까지 다양한 프로젝트를 수행하며, 데이터 기반 `,
+            <span className={styles.codeBlock}>문제 해결 과정</span>,
+            '에서 깊은 흥미를 느껴왔습니다. ',
+            <span className={styles.codeBlock}>딥러닝 및 머신러닝 기반 모델 개발</span>,
+            '을 통해 실질적인 문제를 해결하며, ',
+            <span className={styles.codeBlock}>대용량 데이터 처리 및 최적화</span>,
+            ' 경험을 쌓아왔습니다. ',
+            '또한, ',
+            <span className={styles.codeBlock}>데이터 파이프라인을 구축하여</span>,
+            ' 데이터 수집, 전처리, 모델 학습 및 배포를 자동화하며, 효율적인 데이터 흐름을 설계한 경험이 있습니다. ',
+            '팀 프로젝트에서 팀장을 맡아 기획부터 개발, 배포까지 전 과정에서 주도적으로 참여하며 ',
             <span className={styles.codeBlock}>협업과 리더십</span>,
             '을 경험하였습니다. ',
-            '기업의 데이터 환경을 더 효율적으로 만들고, ', 
-            <span className={styles.codeBlock}>가치 있는 인사이트를 도출</span>,
-            `하는데 기여하고 싶습니다.`,
+            "데이터를 활용한 AI 모델링과 분석을 통해 ",
+            <span className={styles.codeBlock}>실질적인 비즈니스 문제를 해결</span>,
+            "하고, ",
+            <span className={styles.codeBlock}>데이터 기반 의사결정</span>,
+            "을 고도화하는데 기여하고 싶습니다."
           ].map((e, i) => React.createElement('span', { key: `text-${i}` }, e))}
         </p>
       </div>
