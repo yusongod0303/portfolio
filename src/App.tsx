@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import { Portfolio } from './pages';
 import '@/global.less';
 
 const App: React.FC = () => {
   return (
     <div>
-      <Router basename="/portfolio">
+      <Router>
         <Route exact path="/" component={Portfolio} />
       </Router>
     </div>
