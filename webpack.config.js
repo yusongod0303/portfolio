@@ -1,20 +1,21 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
-  mode,
-  entry: {
-    app: path.join(__dirname, 'src', 'index.tsx'),
-  },
-  resolve: {
-    extensions: ['*', '.ts', '.tsx', '.js', '.jsx'],
-    plugins: [new TsconfigPathsPlugin({
-      configFile: 'tsconfig.json'
-    })]
+	mode,
+	entry: {
+		app: path.join(__dirname, 'src', 'index.tsx'),
+	},
+	resolve: {
+		extensions: ['*', '.ts', '.tsx', '.js', '.jsx'],
+		plugins: [new TsconfigPathsPlugin({
+			configFile: 'tsconfig.json'
+		})]
   },
   module: {
     rules: [
@@ -63,8 +64,8 @@ module.exports = {
           },
           'less-loader',
         ],
-      },
-      {
+			},
+			{
         test: /\.(png|jpe?g|gif)$/i,
         use: ['file-loader'],
       },
@@ -73,18 +74,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production' 
-      ? '/portfolio/' 
-      : '/',
-    clean: true,
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
+    contentBase: path.join(__dirname, 'dist'),
     port: 3000,
-    hot: true,
-    historyApiFallback: true
+    hotOnly: true,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -103,6 +97,7 @@ module.exports = {
               removeComments: true,
             }
           : false,
-    })
+    }),
+		new CleanWebpackPlugin()
   ],
 };
