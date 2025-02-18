@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yusongod0303.github.io/portfolio",
+  "homepage": "https://yusongod0303.github.io/portfolio/",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yusongod0303/portfolio.git"
+    "url": "git+https://github.com/yusongod0303/portfolio/git"
   },
   "keywords": [],
   "author": "Yusong Lee <yusongod@naver.com>",
