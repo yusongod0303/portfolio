@@ -103,6 +103,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ toggled, width }, 
                 ))}
               </div>
               <p className={styles.projectDescription}>{project.description}</p>
+              <p className={styles.projectRole}><strong>담당 역할:</strong> {project.role}</p>
               <hr className={styles.sectionDivider} />
               <div className={styles.projectFooter}>
                 <a href={project.githubUrl} target="_blank" className={styles.projectGithubLink}>🔗 GitHub</a>
