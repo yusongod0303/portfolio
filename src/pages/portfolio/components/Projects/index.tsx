@@ -78,7 +78,7 @@ const projectList: Project[] = [
     githubUrl: 'https://github.com/yusongod0303/LGU_LAST_PJ',
     startDate: '2024/11/28',
     endDate: '2025/01/25',
-    tags: ['크롤링', 'DB 구축', '데이터 파이프라인 구축', 'FastText', 'KMEANS'],
+    tags: ['크롤링', 'DB 구축', '데이터 파이프라인 구축', 'FastText', 'KMEANS', 'CDAE'],
     role: '팀장 / 기획, 데이터 파이프라인 및 인프라 구축 담당',
   },
 ];
