@@ -17,6 +17,7 @@ interface Project {
   startDate: string;
   endDate: string;
   tags: string[];
+  role: string;
 }
 
 export interface ProjectsProps {
@@ -34,6 +35,7 @@ const projectList: Project[] = [
     startDate: '2022/04/01',
     endDate: '2022/07/31',
     tags: ['랜덤포레스트', '회귀 분석'],
+    role: '3인 프로젝트 / 데이터 전처리 담당 및 모델링(다중 회귀 분석·랜덤 포레스트) 공동 수행'
   },
   {
     id: 2,
@@ -42,8 +44,9 @@ const projectList: Project[] = [
     imageUrl: ProjectImage2,
     githubUrl: 'https://github.com/yusongod0303/networkmap_2023_08',
     startDate: '2023/08/10',
-    endDate: '2024/08/18',
+    endDate: '2023/08/18',
     tags: ['데이터 시각화', '네트워크 맵'],
+    role: '단독 프로젝트 / 데이터 분석 및 네트워크 맵 시각화'
   },
   {
     id: 3,
@@ -54,6 +57,7 @@ const projectList: Project[] = [
     startDate: '2024/04/01',
     endDate: '2024/07/31',
     tags: ['대푯값을 활용한 선형 그래프', '통계적 접근 활용', '선형성 이용'],
+    role: '2인 프로젝트 / 데이터 전처리 및 대시보드 생성, 분석·모델 개발·성과 도출 전 과정 공동 참여 및 의사결정',
   },
   {
     id: 4,
@@ -64,6 +68,7 @@ const projectList: Project[] = [
     startDate: '2024/10/10',
     endDate: '2025/11/15',
     tags: ['거리 기반 가중치', 'Min-Max Scaler'],
+    role: '유동인구 데이터를 분석해 축제 기간과 비축제 기간의 외부 유입도 성과 지표 개발',
   },
   {
     id: 5,
@@ -74,6 +79,7 @@ const projectList: Project[] = [
     startDate: '2024/11/28',
     endDate: '2025/01/25',
     tags: ['크롤링', 'DB 구축', '데이터 파이프라인 구축', 'FastText', 'KMEANS'],
+    role: '팀장 / 기획, 데이터 파이프라인 및 인프라 구축 담당',
   },
 ];
 
