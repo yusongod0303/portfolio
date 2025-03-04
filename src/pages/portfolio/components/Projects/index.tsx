@@ -78,7 +78,7 @@ const projectList: Project[] = [
     githubUrl: 'https://github.com/yusongod0303/LGU_LAST_PJ',
     startDate: '2024/11/28',
     endDate: '2025/01/25',
-    tags: ['6인 프로젝트 - 팀장', '크롤링', 'DB 모델링', '인프라 구축', 'ETL', 'FastText', 'KMEANS', '배포'],
+    tags: ['6인 프로젝트 - 팀장', '크롤링', 'DB 모델링', '인프라 구축', 'ETL', 'FastText', '배포'],
     role: '기획, 데이터 파이프라인 및 인프라 구축 담당,\n 단어 임베딩 모델 및 검색어 유사 상품 추천 모델 개발',
   },
 ];
