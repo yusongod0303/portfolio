@@ -16,26 +16,38 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className={styles.codeWrapper}>
         <div className={styles.code}>
           {[
-           <span className={styles.comment}># life motto</span>,
-           <br />,
-           <span className={styles.keyword}>while</span>,
-           ' (',
-           <span className={styles.variable}>passion</span>,
-           ' > ',
-           <span className={styles.number}>0</span>,
-           '):',
-           <br />,
-           <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;experiment</span>,
-           '()',
-           <br />,
-           <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;fail</span>,
-           '()',
-           <br />,
-           <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;learn</span>,
-           '()',
-           <br />,
-           <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;succeed</span>,
-           '()',
+            <span className={styles.comment}># life motto</span>,
+            <br />,
+            <span>
+              <span className={styles.keyword}>while</span>
+              {' '}
+              <span className={styles.variable}>passion</span>
+              {':'}
+            </span>,
+            <br />,
+            <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;experiment</span>,
+            '()',
+            <br />,
+            <span>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span className={styles.keyword}>if</span>
+              {' '}
+              <span className={styles.function}>fail</span>
+              {'():'}
+            </span>,
+            <br />,
+            <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learn</span>,
+            '()',
+            <br />,
+            <span className={styles.function}>&nbsp;&nbsp;&nbsp;&nbsp;succeed</span>,
+            '()',
+            <br />,
+            <span>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className={styles.variable}>passion</span>
+              {' += '}
+              <span className={styles.function}>succeed</span>
+              {'()'}
+            </span>
           ].map((e, i) => React.createElement('span', { key: `code-${i}` }, e))}
         </div>
       </div>
