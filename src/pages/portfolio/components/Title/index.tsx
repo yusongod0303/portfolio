@@ -17,7 +17,7 @@ const Title = React.forwardRef<HTMLDivElement, TitleProps>((props, ref) => {
       <div className={styles.title}>
         <h1>Yusong Lee</h1>
         <div>
-          <Typer className={styles.typer} message="Data Scientist" />
+          <Typer className={styles.typer} message="Data Scientist / ML Engineer" />
         </div>
         <div className={styles.leadDown}>
           <div
