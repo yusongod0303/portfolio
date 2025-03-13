@@ -56,11 +56,10 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
           <p className={styles.mainPoint}>
             데이터를 활용한 <span>모델링</span>과 <span>데이터 엔지니어링</span>을 경험하며 성장하고 있는  
             신입 <span>데이터 사이언티스트 & ML 엔지니어</span>입니다.<br />
-            데이터 수집부터 전처리, 모델링, 파이프라인 구축까지 다양한 기술을 학습하고 프로젝트를 수행하며  
-            <span>분석과 모델 개발, 자동화</span> 역량을 키워왔습니다.
+            데이터 수집부터 전처리, 모델링, 파이프라인 구축까지 다양한 기술을 학습하고 프로젝트를 수행하며   
+            <span> 분석과 모델 개발, 자동화</span> 역량을 키워왔습니다.
           </p>
         </Animate>
-        
         <p className={styles.intro}>
           {[
             `안녕하세요, 머신러닝과 데이터 엔지니어링을 함께 탐구하며 성장하고 있는 `,
