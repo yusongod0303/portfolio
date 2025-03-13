@@ -28,7 +28,7 @@ export interface ProjectsProps {
 const projectList: Project[] = [
   {
     id: 1,
-    title: '신재생 에너지(태양열) 설비(접속반) 건전성 평가 모델 개발',
+    title: '신재생 에너지(태양열) 설비(접속반)\n 건전성 평가 모델 개발',
     description: '제 10회 공공데이터 활용 비즈니스 아이디어 공모전 - 빅데이터 분석 부문 (장려상)',
     imageUrl: ProjectImage1,
     githubUrl: 'https://github.com/yusongod0303/Solar-Junction-Box-Reliability-Assessment',
@@ -39,7 +39,7 @@ const projectList: Project[] = [
   },
   {
     id: 2,
-    title: '수강신청 데이터를 이용한 특정 대학 강의의 상관 관계 분석을 위한 네트워크 맵 제작',
+    title: '수강신청 데이터를 이용한\n 특정 대학 강의의 상관 관계 분석을 위한\n 네트워크 맵 제작',
     description: '2023 하계 학기 인턴쉽 - (주)유비온',
     imageUrl: ProjectImage2,
     githubUrl: 'https://github.com/yusongod0303/networkmap_2023_08',
@@ -57,7 +57,7 @@ const projectList: Project[] = [
     startDate: '2024/04/01',
     endDate: '2024/07/31',
     tags: [ '2인 프로젝트', '대푯값을 활용한 선형 그래프', '통계적 접근 활용', '선형성 이용'],
-    role: '데이터 전처리 및 대시보드 생성\n 분석·모델 개발·성과 도출 전 과정 공동 참여 및 의사결정',
+    role: '데이터 전처리 및 대시보드 생성\n 분석·모델 개발·성과 도출 전 과정 공동 참여',
   },
   {
     id: 4,
