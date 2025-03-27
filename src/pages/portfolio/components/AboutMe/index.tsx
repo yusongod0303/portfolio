@@ -57,7 +57,6 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
             데이터를 통한 <span>인사이트 도출</span>과 <span>모델 개발</span>에 열정을 가진 신입 <span>데이터 사이언티스트</span>입니다.<br />
             신재생 에너지 건전성 평가부터 추천 시스템 개발까지, <span>다양한 도메인</span>에서의 <span>문제 해결 경험</span>을 쌓아왔습니다.
           </p>
-
         </Animate>
         <p className={styles.intro}>
           {[

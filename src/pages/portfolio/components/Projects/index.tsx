@@ -53,7 +53,7 @@ const projectList: Project[] = [
     title: '석회석 주입량 최적화 모델 개발',
     description: '제 12회 공공데이터 활용 비즈니스 아이디어 공모전 - 빅데이터 분석 부문',
     imageUrl: ProjectImage3,
-    githubUrl: 'https://github.com/yusongod0303/Optimized-Limestone-Injection-for-SOx-Reduction',
+    githubUrl: 'https://picturesque-earth-123.notion.site/1b87cc6c3dac8172beabf8bebb6c7df7?pvs=4',
     startDate: '2024/04/01',
     endDate: '2024/07/31',
     tags: [ '2인 프로젝트', '대푯값을 활용한 선형 그래프', '통계적 접근 활용', '선형성 이용'],
@@ -75,7 +75,7 @@ const projectList: Project[] = [
     title: '트렌드 기반 홈쇼핑 상품 추천 서비스',
     description: 'LG U+ WHY NOT SW CAMP - 프로젝트',
     imageUrl: ProjectImage5,
-    githubUrl: 'https://github.com/yusongod0303/LGU_LAST_PJ',
+    githubUrl: 'https://picturesque-earth-123.notion.site/1b87cc6c3dac818b9895cf021d959972?pvs=4',
     startDate: '2024/11/28',
     endDate: '2025/01/25',
     tags: ['6인 프로젝트 - 팀장', '크롤링', 'DB 모델링', '인프라 구축', 'ETL', 'FastText', '배포'],
@@ -106,7 +106,7 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ toggled, width }, 
               <p className={styles.projectRole}><strong>담당 역할:</strong> {project.role}</p>
               <div className={styles.projectFooter}>
                 <hr className={styles.sectionDivider} />
-                <a href={project.githubUrl} target="_blank" className={styles.projectGithubLink}>🔗 프로젝트 보러 가기(GitHub)</a>
+                <a href={project.githubUrl} target="_blank" className={styles.projectGithubLink}>🔗 프로젝트 보러 가기</a>
               </div>
             </div>
           </div>
