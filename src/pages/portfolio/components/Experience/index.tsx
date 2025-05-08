@@ -1,4 +1,3 @@
-/*
 import React from 'react';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -56,6 +55,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
   };
 
   const contentList: ExperienceContent[] = [
+    /*
     {
       datePeriod: 'April 2021 – Current',
       title: '팀블라인드',
@@ -75,6 +75,8 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
         },
       ],
     },
+    */
+    /*
     {
       datePeriod: 'February 2017 – April 2021',
       title: '유엔젤',
@@ -107,20 +109,32 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
         },
       ],
     },
+    */
     {
-      datePeriod: 'January 2017',
-      title: 'NHN Technology Services',
-      subTitle: 'UI 개발 인턴',
-      desc: ['HTML, CSS 위주로 UI개발 관련 실무 중심의 교육을 받았습니다.'].join(' '),
+      datePeriod: 'May 2025 - Current',
+      title: '유비벨록스(주)',
+      subTitle: 'Data Engineer',
+      desc: ['각 종 툴을 활용한 데이터 엔지니어 업무 진행'].join(' '),
     },
     {
-      datePeriod: 'June 2016 – August 2016',
-      title: 'HappyTuk Co., Ltd.',
-      subTitle: '플랫폼 개발실 / 인턴',
+      datePeriod: 'October 2024 - November 2024',
+      title: '식스티헤르츠(주)',
+      subTitle: '인공지능(AI) 학습용 데이터 분류ㆍ추출 / 용역',
+      desc: ['RAG 및 Langchain 학습을 위한 보고서 데이터를 분류 및 핵심 키워드 추출 작업을 진행하였습니다.'].join(' '),
+    },
+    {
+      datePeriod: 'June 2023 – August 2023',
+      title: '(주)유비온',
+      subTitle: '코스모스 사업부 / 인턴',
       desc: [
-        'Spring Framework 기반 웹 서비스 페이지 유지보수를 맡았으며,',
-        '게임 쿠폰 지급 관련 컨트롤러 및 뷰를 개발했습니다.',
+        '강의 데이터 마이그레이션 진행 및 챗봇, lms 에듀테크, LLM 등 다양한 도메인 조사 및 PPT 제작 후 발표와,',
+        'Python을 활용한 네트워크 맵 시각화 프로젝트를 진행하였습니다.',
       ].join(' '),
+      projects: [
+        {
+          title: '수강신청 데이터를 이용한 모 대학 강의의 상관 관계 분석을 위한 네트워크 맵 제작',
+        },
+      ],
     },
   ];
 
@@ -135,6 +149,6 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
 });
 
 export default Experience;
-*/
+
 
 export {};

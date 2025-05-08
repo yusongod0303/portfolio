@@ -1,8 +1,8 @@
 export enum NavEnum {
   Home = 'home',
   About = 'about',
+  Experience = 'experience',
   Skills = 'skills',
-  Projects = 'projects',
   Education = 'education',
   Activities = 'Activities',
   Contact = 'contact',

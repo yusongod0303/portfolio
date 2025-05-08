@@ -1,3 +1,4 @@
+/*
 import React, { forwardRef } from 'react';
 import { NavEnum } from '../../data';
 import styles from './style.module.less';
@@ -116,4 +117,8 @@ const Projects = forwardRef<HTMLDivElement, ProjectsProps>(({ toggled, width }, 
   );
 });
 
+
 export default Projects;
+*/
+
+export {};

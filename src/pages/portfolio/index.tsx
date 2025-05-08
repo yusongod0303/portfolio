@@ -5,10 +5,10 @@ import AboutMe from './components/AboutMe';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
 import Education from './components/Education';
-// import Experience from './components/Experience';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Title from './components/Title';
 
@@ -113,16 +113,13 @@ const PortfolioPage: React.FC = () => {
             toggled={toggle.get(NavEnum.About)}
             width={refMap[NavEnum.About]?.current?.clientWidth}
           />
-          <Skills ref={refMap[NavEnum.Skills]} />
-          <Projects
-            ref={refMap[NavEnum.Projects]}
-            toggled={toggle.get(NavEnum.Projects)}
-            width={refMap[NavEnum.Projects]?.current?.clientWidth}
+          <Experience
+            ref={refMap[NavEnum.Experience]}
+            toggled={toggle.get(NavEnum.Experience)}
+            width={refMap[NavEnum.Experience]?.current?.clientWidth}
           />
+          <Skills ref={refMap[NavEnum.Skills]} />
           <Education ref={refMap[NavEnum.Education]} />
-          {/* 향후 사이드 프로젝트 추가
-           *  <Projects ref={refMap[NavEnum.Projects]} />
-           */}
           <Activities ref={refMap[NavEnum.Activities]} />
           <Contact ref={refMap[NavEnum.Contact]} />
           <Footer onLeadDown={handleLeadDown} />
