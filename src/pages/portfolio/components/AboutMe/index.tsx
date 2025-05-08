@@ -54,35 +54,31 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className={styles.introWrapper}>
         <Animate translateX={toggled ? 0 : -width} friction={80} tension={500}>
           <p className={styles.mainPoint}>
-            데이터를 통한 <span>인사이트 도출</span>과 <span>모델 개발</span>에 열정을 가진 신입 <span>데이터 사이언티스트</span>입니다.<br />
-            신재생 에너지 건전성 평가부터 추천 시스템 개발까지, <span>다양한 도메인</span>에서의 <span>문제 해결 경험</span>을 쌓아왔습니다.
+            데이터를 통해 <span>현실적인 인사이트를 도출</span>하고, <span>안정적인 데이터 시스템을 구축</span>해온 신입 <span>데이터 엔지니어</span>입니다.
           </p>
         </Animate>
         <p className={styles.intro}>
-          {[
-            `안녕하세요, 데이터 수집부터 분석, 인사이트 도출 및 모델 개발까지 전체 프로세스를 경험한 `,
-            <span className={styles.withColor}>이유송</span>,
-            `입니다. `,
-            <br/>,
-            `신재생 에너지 최적화부터 추천 시스템 개발까지 다양한 프로젝트를 수행하며, 데이터 기반 `,
-            <span className={styles.codeBlock}>문제 해결 과정</span>,
-            '에서 깊은 흥미를 느껴왔습니다. ',
-            <span className={styles.codeBlock}>딥러닝 및 머신러닝 기반 모델 개발</span>,
-            '을 통해 실질적인 문제를 해결하며, ',
-            <span className={styles.codeBlock}>대용량 데이터 처리 및 최적화</span>,
-            ' 경험을 쌓아왔습니다. ',
-            '또한, ',
-            <span className={styles.codeBlock}>데이터 파이프라인을 구축하여</span>,
-            ' 데이터 수집, 전처리, 모델 학습 및 배포를 자동화하며, 효율적인 데이터 흐름을 설계한 경험이 있습니다. ',
-            '팀 프로젝트에서 팀장을 맡아 기획부터 개발, 배포까지 전 과정에서 주도적으로 참여하며 ',
-            <span className={styles.codeBlock}>협업과 리더십</span>,
-            '을 경험하였습니다. ',
-            "데이터를 활용한 AI 모델링과 분석을 통해 ",
-            <span className={styles.codeBlock}>실질적인 비즈니스 문제를 해결</span>,
-            "하고, ",
-            <span className={styles.codeBlock}>데이터 기반 의사결정</span>,
-            "을 고도화하는데 기여하고 싶습니다."
-          ].map((e, i) => React.createElement('span', { key: `text-${i}` }, e))}
+        {[
+          `안녕하세요, 데이터를 안정적으로 흐르게 만드는 일에 가치를 느끼고, 실질적인 개선을 고민하는`,
+          <span className={styles.withColor}>데이터 엔지니어 이유송</span>,
+          `입니다.`,
+          <br />,
+          `데이터 수집과 흐름을 설계할 때 `,
+          <span className={styles.codeBlock}>Data Quality와 Observability</span>,
+          '를 중요하게 생각하고, ',
+          <span className={styles.codeBlock}>Data drift나 오류 탐지</span>,
+          '에도 꾸준히 관심을 가지고 공부하고 있습니다. ',
+          '요즘엔 ',
+          <span className={styles.codeBlock}>Hadoop, Spark</span>,
+          '같은 분산 처리 기술이나 ',
+          <span className={styles.codeBlock}>Kafka</span>,
+          '와 같은 실시간 데이터 스트리밍 플랫폼',  
+          <span className={styles.codeBlock}>Apache NiFi, Apache Airflow</span>,
+          '처럼 데이터 흐름을 자동화하고 제어할 수 있는 도구도 학습하고 있습니다.',
+          <span className={styles.codeBlock}>ELK Stack</span>,
+          '을 활용한 로그 기반 데이터 수집 및 모니터링 환경 구성에도 관심을 갖고 공부하고 있습니다. ',
+          <span className={styles.codeBlock}>신뢰할 수 있는 데이터 환경을 만드는 걸 가장 기본이자 중요한 책임이라고 생각합니다.</span>,
+        ].map((e, i) => React.createElement('span', { key: `text-${i}` }, e))}
         </p>
       </div>
     </div>
