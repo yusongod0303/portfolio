@@ -125,7 +125,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
     {
       datePeriod: 'June 2023 – August 2023',
       title: '(주)유비온',
-      subTitle: '코스모스 사업부 / 인턴',
+      subTitle: '기획 및 데이터 분석 / 인턴',
       desc: [
         '강의 데이터 마이그레이션 진행 및 챗봇, lms 에듀테크, LLM 등 다양한 도메인 조사 및 PPT 제작 후 발표와,',
         'Python을 활용한 네트워크 맵 시각화 프로젝트를 진행하였습니다.',
