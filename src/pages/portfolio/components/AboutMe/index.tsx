@@ -54,7 +54,7 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className={styles.introWrapper}>
         <Animate translateX={toggled ? 0 : -width} friction={80} tension={500}>
           <p className={styles.mainPoint}>
-            서비스 개발을 위해 <span>맞춤형 데이터를 제공</span>하고, <span>데이터 검증을 위한 프로그램을 개발</span>하는 <span>데이터 엔지니어</span>입니다.
+            데이터를 통해 <span>서비스에 가치를 더하고</span>, <span>활용 가능한 맞춤형 데이터를 구축</span>하는 <span>데이터 엔지니어</span>입니다.
           </p>
         </Animate>
         <p className={styles.intro}>
