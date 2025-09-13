@@ -60,11 +60,22 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
       title: '유비벨록스(주)',
       subTitle: 'Data Engineer',
       desc: [
-        '특정 기간 출결 로그 데이터 파이프라인 자동화 & 출결 챗봇 개발',
-        '도서관 데이터 구축 & 도서관 챗봇 개발',
-        'AI 세미나 진행',
-        'PDF 문서 추출 및 ES 로드 & 사내 문서 챗봇 개발'
+        '원하는 서비스 개발을 위한 맞춤형 데이터 제공 & 프로그램 개발을 통한 데이터 검증'
       ].join(' '),
+      projects: [
+        {
+          title: '특정 기간 출결 로그 데이터 파이프라인 자동화 & 출결 챗봇 개발',
+        },
+        {
+          title: '도서관 데이터 구축 & 도서관 챗봇 개발',
+        },
+        {    
+          title: 'AI 세미나 진행',
+        },
+        {
+          title: 'PDF 문서 추출 및 ES 로드 % 사내 문서 챗봇 개발'
+        },
+      ],
     },
     {
       datePeriod: 'October 2024 - November 2024',
