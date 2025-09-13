@@ -73,7 +73,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
           title: 'AI 세미나 진행',
         },
         {
-          title: 'PDF 문서 추출 및 ES 로드 % 사내 문서 챗봇 개발'
+          title: 'PDF 문서 추출 및 ES 로드 & 사내 문서 챗봇 개발'
         },
       ],
     },
