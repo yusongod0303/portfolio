@@ -59,7 +59,12 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>((props, ref
       datePeriod: 'May 2025 - Current',
       title: '유비벨록스(주)',
       subTitle: 'Data Engineer',
-      desc: ['각 종 툴을 활용한 데이터 엔지니어 업무 진행'].join(' '),
+      desc: [
+        '특정 기간 출결 로그 데이터 파이프라인 자동화 & 출결 챗봇 개발',
+        '도서관 데이터 구축 & 도서관 챗봇 개발',
+        'AI 세미나 진행',
+        'PDF 문서 추출 및 ES 로드 & 사내 문서 챗봇 개발'
+      ].join(' '),
     },
     {
       datePeriod: 'October 2024 - November 2024',
